@@ -4,12 +4,10 @@ import torch
 from torch.utils.data import Dataset
 import json
 
-# ステップ1: データの準備
-
-size = input("SizeID: ")
+# ステップ1: Data
 
 # JSONデータの読み込み
-with open(f'data-{size}.json') as f:
+with open('data.json') as f:
     data = json.load(f)
 
 df = pd.DataFrame(data)
